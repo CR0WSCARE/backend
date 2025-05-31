@@ -1,8 +1,10 @@
 package com.example.backend.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 
-public class admin {
+@TableName("admin")
+public class user {
     @TableId(type = com.baomidou.mybatisplus.annotation.IdType.AUTO)
     private Integer id;
     private String username;
